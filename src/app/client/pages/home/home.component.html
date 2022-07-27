@@ -1,0 +1,9 @@
+<div class="home">
+<div  *ngFor="let produit of produits$|async" >
+    <div class="cont">
+        <app-card [produit]="produit"></app-card>
+    <a routerLink="/client/details/{{produit?.id}}"class="btn btn-primary">Details</a>
+    
+    </div>
+</div>
+</div>
